@@ -24,7 +24,7 @@
     font-weight: 300;
 }
 .section--contact .contact-introduce {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 25px;
     font-weight: 500;
     color: #c1c2c3;
@@ -33,7 +33,7 @@
     margin-top: 50px;
 }
 .section--contact .profile-img {
-    flex: 15% 1;
+    flex: 15%;
     text-align: right;
 }
 .section--contact .profile-img img {

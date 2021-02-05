@@ -5,13 +5,13 @@ function SkillCard({ skill }: Props) {
     return (
         <div className="skill-card-main">
             <div className="skill-icon">
-                <i className={skill.fontAwesome}></i>
+                <i className={skill.fontAwesome}/>
             </div>
             <div className="skill-text">
                 <p>{skill.text}</p>
             </div>
             <div className="skill-progress-bar">
-                <span style={{width: `${skill.proficiency}%`}}></span>
+                <span style={{width: `${skill.proficiency}%`}}/>
                 <p>{skill.proficiency}%</p>
             </div>
         </div>

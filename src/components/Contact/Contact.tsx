@@ -24,6 +24,9 @@ function Contact() {
                     <div className="contact-introduce">
                         <p>{contactInfo.introduce}</p>
                     </div>
+                    <div className="contact-introduce">
+                        <p>{contactInfo.email}</p>
+                    </div>
                     <div className="social-links">
                         <Social />
                     </div>
