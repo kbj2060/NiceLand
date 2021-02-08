@@ -4,7 +4,7 @@
 	display: block;
 } */
 header {
-	height: 100px;
+	height: 80px;
 	padding: 0 20px;
 	position: fixed;
 	top: 0;
@@ -22,7 +22,7 @@ header .inner {
 }
 header .header-logo {
 	font-family: "Source Code Pro", sans-serif;
-	font-size: 50px;
+	font-size: 35px;
 	float: left;
 	margin-left: 50px;
 	padding: 25px 0;

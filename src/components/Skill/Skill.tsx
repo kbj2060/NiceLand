@@ -2,6 +2,7 @@ import React from 'react';
 import './Skill.css';
 import { skills } from '../../portfolio';
 import SkillCard from '../SkillCard/SkillCard';
+import '../SkillCard/SkillCard.css';
 
 function Skill() {
     const Fade: any = require("react-reveal/Fade");
@@ -21,6 +22,18 @@ function Skill() {
                         {skills.lists.map((list, i) => (
                             <SkillCard skill={list} key={i} />
                         ))}
+                        <div className="skill-card-main">
+                            <div className="skill-icon">
+                                <p>ML</p>
+                            </div>
+                            <div className="skill-text">
+                                <p>ML</p>
+                            </div>
+                            <div className="skill-progress-bar">
+                                <span style={{width: `30%`}}/>
+                                <p>30%</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="skill-desc">
                         {skills.describeSkills.map((desc, i) => <p key={i}>{desc}</p>)}

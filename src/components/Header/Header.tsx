@@ -27,7 +27,7 @@ function Header() {
 				</div>
 				
 				<div className="icon">
-					<a href="#toggle-nav" className="icon fas fa-bars" onClick={onClickMenu}></a>
+					<a href="#toggle-nav" className="icon fas fa-bars" onClick={onClickMenu}/>
 				</div>
 
 				<ul className="nav-menu" id="toggle-nav">
