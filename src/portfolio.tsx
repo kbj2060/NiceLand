@@ -5,18 +5,20 @@ export const greeting = {
 	title: '저는 김병진입니다.',
 	subTitle: emoji("하고 싶은 걸 만드는 개발자가 꿈입니다."),
 	role: "Software Developer",
-	resumeLink: "https://github.com/kbj2060?tab=repositories",
+	resumeLink: process.env.PUBLIC_URL +"/Resume.pdf",
 	// IMPORTANT
 	// If you don't want to show this, change view to false. DO NOT DELETE!
 	view: true
 };
 
+// TODO : Velog 블로그 추가
 export const socialMediaLinks = {
 	// IMPORTANT
 	// if you don't have, change value to blank or false!! DO NOT DELETE!
 	github: 'https://github.com/kbj2060?tab=repositories',
 	blogger: 'https://byungjin-study.blogspot.com/',
 	email: 'kbj2060@gmail.com',
+	velog: 'https://velog.io/@kbj2060',
 	facebook: 'Your facebook link',
 	twitter: "Your twitter link",
 	instagram: "Your instagram link",
@@ -24,6 +26,7 @@ export const socialMediaLinks = {
 	stackoverflow: 'Your stackoverflow link'
 };
 
+// TODO : TS 와 Nestjs 추가할 것.
 export const skills = {
 	title: emoji("What I Can Do 👀"),
 	subTitle: "",
@@ -75,7 +78,7 @@ export const projects = {
 			title: "농산물 유통 어플 서비스",
 			desc: "Kotlin, Firebase 로 만든 어플로 농부와 소비자를 직접 연결하여 유통 마진을 없애고 " +
 				"농산물의 단가를 적정가에 맞춰 농부의 수익 증대와 소비자의 효율적인 구매를 유도하고자 만든 서비스. 현재 베타 서비스 중.",
-			url: "#"
+			url: "https://play.google.com/store/apps/details?id=com.plantpoint"
 		}
 	],
 	view: true
@@ -101,6 +104,7 @@ export const achievements = {
 	view: false
 };
 
+// TODO : 명저 읽기 프로젝트 추가할 것.
 export const blogs = {
 	title: emoji("My Posts 📰"),
 	subTitle: "",

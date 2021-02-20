@@ -42,9 +42,9 @@ function Skill() {
                 </Fade>
 
                 <Fade right duration={800}>
-                <div className="skill-image">
-                    <i className="fas fa-code"></i>
-                </div>
+                    <div className="skill-image">
+                        <i className="fas fa-code"></i>
+                    </div>
                 </Fade>
 
             </div>
