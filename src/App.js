@@ -1,8 +1,11 @@
-import './App.css';
 import PermanentAppBar from './components/Appbar/Appbar.tsx';
+import MainSection from './components/MainSection/MainSection.tsx';
+
 import { createTheme } from '@material-ui/core/styles';
-import grey from '@material-ui/core/colors/grey';
 import { ThemeProvider } from '@material-ui/styles';
+import grey from '@material-ui/core/colors/grey';
+
+import './App.css';
 
 const theme = createTheme({
   palette: {
@@ -20,7 +23,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <div className="App">
                 <PermanentAppBar />
-                
+                <MainSection />
             </div>
         </ThemeProvider>
     );

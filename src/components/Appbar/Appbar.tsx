@@ -1,9 +1,5 @@
-import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import './Appbar.css'
 
 
@@ -12,11 +8,13 @@ export default function PermanentAppBar() {
         <div className='appbar-root'>
             <AppBar position="static" className="appbar">
                 <Toolbar className="toolbar">
+                    {/* 
+                    TODO: 메인 페이지 벗어나면 메뉴가 생길 것.
                     <IconButton edge="start" color="inherit" aria-label="menu">
-                    <MenuIcon />
-                    </IconButton>
-                    <div className="company_name-div">
-                        <Typography color="inherit" className="company_name">NiceLand</Typography>
+                        <MenuIcon />
+                    </IconButton> */}
+                    <div className="logo-div">
+                        <img alt="logo" color="inherit" src={process.env.PUBLIC_URL + '/logo.png'} className="logo"/>
                     </div>
                 </Toolbar>
             </AppBar>
