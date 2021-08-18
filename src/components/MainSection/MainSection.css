@@ -1,0 +1,84 @@
+@keyframes tipsy {
+    0 {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+.company_logo-div {
+    height: 70vh;
+}
+.company_logo {
+    font-weight: 400 !important;
+    font-family: 'Hahmlet', serif;
+    color: black;
+    /* text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; */
+    font-size: 7vmax;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    caret-color: transparent;
+}
+
+.company_logo:before,
+.company_logo:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    /* border: 0.1em solid black; */
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.company_logo:before {
+    border-color: black black rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.company_logo:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) black black;
+    box-shadow: 15px 15px 15px rgba(46, 46, 49, .8);
+}
+
+.company_sentence {
+    position: absolute;
+    left: 60%;
+    width: 40%;
+    top: 50%;
+    font-size: 4vw !important;
+    font-weight: bolder !important;
+}
+
+.main_buttons-footer {
+    height: 20vh;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_button{
+    border: 0.1em solid black;
+    margin: 0 3vw !important;
+    font-weight: bold !important;
+    letter-spacing: 5px !important;
+    font-size: 1rem !important;
+}
+
+.intro_button:hover {
+    text-decoration: none !important;
+    background: none !important;
+    background-color: white !important;
+}

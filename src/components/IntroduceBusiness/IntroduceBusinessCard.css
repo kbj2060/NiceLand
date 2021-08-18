@@ -1,0 +1,14 @@
+.intro_image-div {
+    height: 35vmax;
+    display: flex;
+    padding-left: 5vw;
+}
+
+.description-div {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: x-small;
+}
