@@ -10,9 +10,11 @@
     height: 70vh;
 }
 .company_logo {
+    font-weight: 400 !important;
+    font-family: 'Hahmlet', serif;
     color: black;
     /* text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; */
-    font-size: 8vmax;
+    font-size: 7vmax;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: -3px;
@@ -72,6 +74,7 @@
     margin: 0 3vw !important;
     font-weight: bold !important;
     letter-spacing: 5px !important;
+    font-size: 1rem !important;
 }
 
 .intro_button:hover {
@@ -79,9 +82,3 @@
     background: none !important;
     background-color: white !important;
 }
-/* 
-.intro_button:focus  {
-    background-color: white !important;
-    text-decoration: none !important;
-    background: none !important;
-} */
