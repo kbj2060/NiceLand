@@ -12,7 +12,7 @@
 .company_logo {
     color: black;
     /* text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; */
-    font-size: 9vw;
+    font-size: 8vmax;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: -3px;
@@ -21,6 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    caret-color: transparent;
 }
 
 .company_logo:before,
@@ -32,7 +33,7 @@
     width: 100%;
     top: 50%;
     display: block;
-    border: 0.1em solid black;
+    /* border: 0.1em solid black; */
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 10s infinite alternate ease-in-out tipsy;
 }
@@ -67,6 +68,7 @@
 }
 
 .intro_button{
+    border: 0.1em solid black;
     margin: 0 3vw !important;
     font-weight: bold !important;
     letter-spacing: 5px !important;

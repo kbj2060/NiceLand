@@ -6,12 +6,12 @@ export default function MainSection() {
     return (
         <div className='mainsection-root'>
             <div className="company_logo-div">
-                <a className="company_logo" rel="noreferrer" href="http://localhost:3000/" target="_blank">NICELAND</a>
+                <p className="company_logo">NICELAND</p>
                 <footer className="main_buttons-footer">
-                    <Button className="intro_button"  color="secondary" disableRipple={true}>
+                    <Button href="/intro_company" className="intro_button"  color="secondary" disableRipple={true}>
                         회사소개
                     </Button>
-                    <Button className="intro_button"  color="secondary" disableRipple={true}>
+                    <Button href="/intro_businesss" className="intro_button"  color="secondary" disableRipple={true}>
                         사업소개
                     </Button>
                 </footer>
