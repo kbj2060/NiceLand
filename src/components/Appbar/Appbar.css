@@ -19,9 +19,23 @@
     caret-color: transparent;
 }
 
-.logo-div {
+.logo-a {
     height: 100%;
     width: auto;
     display: flex;
     align-items: center;
+}
+
+.info-text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.info-text {
+    font-size: 0.5rem !important;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding-right: 1vw;
 }

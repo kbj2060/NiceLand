@@ -70,6 +70,8 @@
 }
 
 .intro_button{
+    font-family: 'Noto Sans KR', sans-serif !important;
+    font-weight: 100 !important;
     border: 0.1em solid black;
     margin: 0 3vw !important;
     font-weight: bold !important;

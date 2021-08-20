@@ -1,35 +1,42 @@
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import SwiperCore, {Scrollbar, Pagination} from 'swiper/core';
 import './IntroduceBusiness.css'
 import './IntroduceBusinessCard.css'
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
+import { Link } from "react-router-dom";
+import {useDispatch} from "react-redux";
+import { BusinessInfo } from "../../interfaces/BusinessInfo";
+import {saveBusinessInfo} from "../../redux/modules/ControlBusinessInfo"
 
 // install Swiper modules
 SwiperCore.use([Scrollbar, Pagination]);
 
-interface CardInfo {
-    address : string,
-    status : string,
-    price : string,
-    date : string,
-    picture : string,
-    size : string
-}
 
-function IntroduceBusinessCard(props: CardInfo) {
+function IntroduceBusinessCard(props: BusinessInfo) {
+    const dispatch = useDispatch();
+
+    function handleOnClick() {
+        dispatch(saveBusinessInfo(props))
+    }
+
     return (
-        <div className="intro_image-div">
-            <a href={process.env.PUBLIC_URL + props.picture}>
-                <img alt="intro_image" src={process.env.PUBLIC_URL + props.picture} />
-            </a>
-            <div className="description-div">
-                <p>주소 : {props.address}</p>
-                <p>토지 크기 : {props.size}</p>
-                <p>상태 : {props.status}</p>
-                <p>마지막 업데이트 : {props.date}</p>
+        <div>
+            <div className="intro_image-div">
+                <a href={process.env.PUBLIC_URL + props.picture} className="intro_image-div">
+                    <img alt="intro_image" src={process.env.PUBLIC_URL + props.picture} />
+                </a>
+                <div className="description-div">
+                    <Typography className="description_category">{props.category}</Typography>
+                    <p className="description_date">{props.date}</p>
+                    <p className="description">{props.address}</p>
+                    {/* <p className="description">{props.size}</p>
+                    <p className="description">{props.status}</p> */}
+                    <Link to="/business_detail" >
+                        <Button variant="outlined" onClick={handleOnClick} className="more-button">자세히 보기</Button>
+                    </Link>
+                </div>
             </div>
         </div>
     );
@@ -37,13 +44,13 @@ function IntroduceBusinessCard(props: CardInfo) {
 
 
 export default function IntroduceBusiness() {
-    const construction_info: CardInfo = require('../../constructions.json')
+    const construction_info: BusinessInfo[] = require('../../constructions.json')
 
     function render_all_cards () {
-        return Object.values(construction_info).map((info) => {
+        return Object.values(construction_info).map((info: BusinessInfo) => {
             return (
-                <SwiperSlide>
-                    <IntroduceBusinessCard key={info.address} {...info} />
+                <SwiperSlide key={info.address}>
+                    <IntroduceBusinessCard  {...info} />
                 </SwiperSlide>
             )
         })

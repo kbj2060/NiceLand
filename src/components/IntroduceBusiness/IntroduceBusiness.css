@@ -7,7 +7,7 @@
     align-items: flex-start;
     justify-content: center;
     height: 80vh;
-    padding-top: 5vh;
+    padding-top: 2vh;
 }
 
 .swiper-container {
@@ -54,3 +54,4 @@
 .main-text {
     margin-top: 3vh !important;
 }
+

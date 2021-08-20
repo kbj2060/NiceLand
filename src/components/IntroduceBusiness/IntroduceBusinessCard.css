@@ -1,7 +1,6 @@
 .intro_image-div {
-    height: 35vmax;
+    height: 50vh;
     display: flex;
-    padding-left: 5vw;
 }
 
 .description-div {
@@ -11,4 +10,34 @@
     align-items: flex-start;
     justify-content: center;
     font-size: x-small;
+}
+
+.description_category {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 3vw !important;
+    color: #918d8d;
+    font-size: 5vw !important;
+    font-weight: bold !important;
+    padding-bottom: 3vh;
+}
+
+.description {
+    font-family: Noto Sans KR;
+    font-weight: bold;
+    margin : 1vh;
+    font-size: 1vw;
+}
+
+.description_date {
+    font-family: Noto Sans KR;
+    font-weight: bold;
+    margin : 1vh;
+    font-size: 1vw;
+    margin-left: auto;
+}
+
+.more-button{
+    margin: 0 auto !important;
+    width: 30vw;
+    margin-top: 3vh !important;
 }
