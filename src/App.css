@@ -6,6 +6,24 @@
     color: black;
 }
 
+.info-text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #918d8d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.info-text {
+    font-size: 0.5vw !important;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding-right: 1vw;
+}
+
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

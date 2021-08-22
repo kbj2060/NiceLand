@@ -15,7 +15,7 @@
 .description_category {
     font-family: 'Hahmlet', serif !important;
     letter-spacing: 3vw !important;
-    color: #918d8d;
+    color: #737171;
     font-size: 5vw !important;
     font-weight: bold !important;
     padding-bottom: 3vh;
@@ -23,21 +23,31 @@
 
 .description {
     font-family: Noto Sans KR;
-    font-weight: bold;
-    margin : 1vh;
+    /* font-weight: bold; */
+    /* margin : 1vh; */
     font-size: 1vw;
+}
+
+.address_date-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .description_date {
     font-family: Noto Sans KR;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin : 1vh;
     font-size: 1vw;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .more-button{
-    margin: 0 auto !important;
-    width: 30vw;
+    /* margin: 0 auto !important; */
+    color: #737171 !important;
+    /* width: 30vw; */
     margin-top: 3vh !important;
+    text-decoration: none !important;
 }

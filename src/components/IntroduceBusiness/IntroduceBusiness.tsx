@@ -29,12 +29,12 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                 </a>
                 <div className="description-div">
                     <Typography className="description_category">{props.category}</Typography>
-                    <p className="description_date">{props.date}</p>
-                    <p className="description">{props.address}</p>
-                    {/* <p className="description">{props.size}</p>
-                    <p className="description">{props.status}</p> */}
-                    <Link to="/business_detail" >
-                        <Button variant="outlined" onClick={handleOnClick} className="more-button">자세히 보기</Button>
+                    <div className="address_date-div">
+                        <p className="description">{props.address}</p>
+                        <p className="description_date">{props.date}</p>
+                    </div>
+                    <Link to="/business_detail" className="more-button">
+                        <Button variant="outlined" onClick={handleOnClick}>More</Button>
                     </Link>
                 </div>
             </div>
