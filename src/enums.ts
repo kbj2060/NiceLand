@@ -1,0 +1,1 @@
+export const DSTGSH_DEVICE_WIDTH = 500

@@ -22,21 +22,19 @@ function IntroduceBusinessCard(props: BusinessInfo) {
     }
 
     return (
-        <div>
-            <div className="intro_image-div">
-                <a href={process.env.PUBLIC_URL + props.picture} className="intro_image-div">
-                    <img alt="intro_image" src={process.env.PUBLIC_URL + props.picture} />
-                </a>
-                <div className="description-div">
-                    <Typography className="description_category">{props.category}</Typography>
-                    <div className="address_date-div">
-                        <p className="description">{props.address}</p>
-                        <p className="description_date">{props.date}</p>
-                    </div>
-                    <Link to="/business_detail" className="more-button">
-                        <Button variant="outlined" onClick={handleOnClick}>More</Button>
-                    </Link>
+        <div className="intro_image-div">
+            <a href={process.env.PUBLIC_URL + props.represent_picture} className="intro_image-div">
+                <img alt="intro_image" src={process.env.PUBLIC_URL + props.represent_picture} />
+            </a>
+            <div className="description-div">
+                <Typography className="description_category">{props.category}</Typography>
+                <div className="address_date-div">
+                    <p className="description">{props.address}</p>
+                    <p className="description_date">{props.date}</p>
                 </div>
+                <Link to="/business_detail" className="more-button">
+                    <Button variant="outlined" onClick={handleOnClick}>More</Button>
+                </Link>
             </div>
         </div>
     );

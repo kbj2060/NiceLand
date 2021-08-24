@@ -1,3 +1,4 @@
+import { LandInfo } from './../../interfaces/LandInfo';
 import { BusinessInfo } from "../../interfaces/BusinessInfo";
 
 const SAVE_BUSINESS_INFO = "SAVE_BUSINESS_INFO";
@@ -10,15 +11,25 @@ export interface actionTypes {
     type: "SAVE_BUSINESS_INFO";
     info: BusinessInfo;
 }
+const defaultLandInfo: LandInfo = {
+    'address':'',
+    "owner" : "",
+    "buildingArea" :"",
+    "floorArea" : "",
+    "siteArea": "",
+    "buildingToLandRatio": "",
+    "floorAreaRatio": ""
+}
 
 const initialState: BusinessInfo = {
     'address':'',
     'status':'',
     'price':'',
     'date':'',
-    'picture':'',
+    'represent_picture':'',
     'size':'',
     'category':'',
+    'lands': [defaultLandInfo]
 }
 
 function ControlBusinessInfo(

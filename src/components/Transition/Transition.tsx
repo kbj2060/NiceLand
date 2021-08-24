@@ -11,7 +11,7 @@ const blackBox = {
       height: 0,
       transition: {
         when: "afterChildren",
-        duration: 0.8,
+        duration: 0.5,
         ease: [0.87, 0, 0.13, 1],
       },
     },
@@ -19,12 +19,12 @@ const blackBox = {
 
 const textContainer = {
     initial: {
-      opacity: 1,
+        opacity: 1,
     },
     animate: {
       opacity: 0,
       transition: {
-        duration: 0.9,
+        duration: 0.5,
         when: "afterChildren",
       },
     },
@@ -37,7 +37,7 @@ const text = {
     animate: {
       y: 80,
       transition: {
-        duration: 1.6,
+        duration: 1,
         ease: [0.87, 0, 0.13, 1],
       },
     },
@@ -68,7 +68,7 @@ export default function Transition() {
                 </pattern>
                 <text
                     className="transition-text"
-                    text-anchor="middle"
+                    textAnchor="middle"
                     x="50%"
                     y="50%"
                     style={{ fill: "url(#pattern)" }}

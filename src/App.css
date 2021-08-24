@@ -4,16 +4,14 @@
     overflow-x: hidden;
     text-align: center;
     color: black;
+    margin:0; padding:0;
 }
 
-.info-text-div{
+.info-footer{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     color: #918d8d;
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
 .info-text {

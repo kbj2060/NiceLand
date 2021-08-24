@@ -7,7 +7,11 @@
     }
 }
 .company_logo-div {
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
 }
 .company_logo {
     font-weight: 400 !important;
@@ -20,7 +24,7 @@
     letter-spacing: -3px;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     caret-color: transparent;
@@ -59,7 +63,7 @@
     font-weight: bolder !important;
 }
 
-.main_buttons-footer {
+.main_buttons-div {
     height: 20vh;
     position: absolute;
     top: 80%;
