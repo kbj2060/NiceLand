@@ -12,7 +12,7 @@ export interface actionTypes {
     info: BusinessInfo;
 }
 const defaultLandInfo: LandInfo = {
-    'address':'',
+    'address':"",
     "owner" : "",
     "buildingArea" :"",
     "floorArea" : "",

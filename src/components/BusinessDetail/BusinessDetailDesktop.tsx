@@ -5,15 +5,14 @@ import { motion } from 'framer-motion';
 import { Typography } from '@material-ui/core';
 import { getFromRedux } from '../../redux/getFromRedux';
 import { LandInfo } from '../../interfaces/LandInfo';
+import Slider from "react-slick";
 
 function showLands() {
     const lands: LandInfo[] = getFromRedux('ControlBusinessInfo')['lands']
     console.log(lands)
     return lands.map((land: LandInfo) => {
         return (
-            <>
-            
-            <div className="detail_description-div">
+            <div key={land.address} >
                 <motion.img 
                 variants={image}
                 alt="맵이미지" 
@@ -38,20 +37,29 @@ function showLands() {
                     </motion.p>
                 </div>
             </div>
-            </>
         );
     })
 }
 
 export default function BusinessDetailDesktop() {
-    
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2
+    };
+
     return (
         <BusinessDetailWrapper>
             <div className="detail-div">
                 <motion.h1 variants={title}>
                     <Typography className="description_category">FACTORY</Typography>
                 </motion.h1>
-                {showLands()}
+                <Slider {...settings}>
+                    {showLands()}
+                </Slider>
             </div>
         </BusinessDetailWrapper>
     );
