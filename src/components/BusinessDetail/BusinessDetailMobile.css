@@ -1,29 +1,63 @@
-.businessDetail-root {
-    height: 100vh;
-    width : 80%;
+.detail-div {
+    width: 80vw;
     display: flex;
-	/* animation-name: backgroundColorPalette;
-	animation-duration: 1s;
-	animation-direction: alternate;
-	animation-timing-function: linear; 
-    animation-fill-mode: forwards; */
-    margin : 0 auto;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-@keyframes backgroundColorPalette {
-	0% {
-		background: #ffffff;
-	}
-	25% {
-		background: #cacaca;
-	}
-	50% {
-		background: #7c7c7c;
-	}
-	75% {
-		background: #4b4b4b;
-	}
-	100% {
-		background: #000000;
-	}
+.description-slide > p {
+    letter-spacing: 1vw;
+    margin-top: 0;
+    font-size: 1vh;
+    font-family: 'Do Hyeon', sans-serif;
 }
+
+.detail_description {
+    display: flex;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 0.3vw;
+    width: 80vw;
+}
+
+.detail_description > div {
+    width: 100%;
+    margin: auto 0;
+    font-size: x-small;
+}
+
+.detail_description > img {
+    width: 50%;
+    height: auto;
+}
+
+.description-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_category {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 3vw !important;
+    color: #464646;
+    font-size: 5vw !important;
+    font-weight: bold !important
+}
+
+
+.description_title-motion {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.description_title-motion > p {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 1vw !important;
+    color: #464646;
+    font-size: 2vw !important;
+    font-weight: bold !important;
+}
+
+.swiper-container {
+    padding-bottom: 5vh !important;
+}
+

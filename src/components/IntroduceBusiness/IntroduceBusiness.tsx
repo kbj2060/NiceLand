@@ -35,11 +35,15 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                 src={process.env.PUBLIC_URL + props.represent_picture} />
             <div className="description-div">
                 <motion.p  variants={title} className="description_category">{props.category}</motion.p>
-                <motion.p variants={description} >{props.address}</motion.p>
-                <motion.p variants={description} >{props.date}</motion.p>
-                <Link to="/business_detail" className="more-button">
-                    <Button variant="outlined" onClick={handleOnClick}>More</Button>
-                </Link>
+                <div>
+                    <motion.p variants={description} >{props.address}</motion.p>
+                    <motion.p variants={description} >{props.date}</motion.p>
+                </div>
+                <motion.div variants={description} >
+                    <Link to="/business_detail" className="more-button">
+                        <Button variant="outlined" onClick={handleOnClick}>More</Button>
+                    </Link>
+                </motion.div>
             </div>
         </motion.div>
     );

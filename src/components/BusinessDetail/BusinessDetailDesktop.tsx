@@ -3,7 +3,6 @@ import BusinessDetailWrapper from './BusinessDetailWrapper';
 import { description, image, title } from './BusinessDetailMotion';
 import { motion } from 'framer-motion';
 import { Typography } from '@material-ui/core';
-import { getFromRedux } from '../../redux/getFromRedux';
 import { LandInfo } from '../../interfaces/LandInfo';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Scrollbar, Pagination} from 'swiper/core';
@@ -12,6 +11,7 @@ import "swiper/components/pagination/pagination.min.css"
 import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
+import PersistedStore from "../../redux/store";
 
 SwiperCore.use([Scrollbar, Pagination]);
 
@@ -23,7 +23,7 @@ function showLands(businessInfo: BusinessInfo) {
         return (
             <SwiperSlide key={land.address} className="description-slide" >
                 <p>{land.address}</p>
-                <div className="detail_description">
+                <div className="detail_description-desktop">
                     <motion.img 
                         variants={image}
                         alt="맵이미지" 
@@ -50,8 +50,9 @@ function showLands(businessInfo: BusinessInfo) {
 }
 
 export default function BusinessDetailDesktop() {
-    const businessInfo: BusinessInfo = getFromRedux('ControlBusinessInfo')
-    
+    const {store, persistor}= PersistedStore(); 
+    const businessInfo: BusinessInfo = store.getState().ControlBusinessInfo
+    console.log(typeof(businessInfo))
     return (
         <BusinessDetailWrapper>
             <div className="detail-div">
@@ -60,19 +61,26 @@ export default function BusinessDetailDesktop() {
                 </motion.h1>
                 <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
 
-                <motion.h1 variants={title} className="description_title-motion">
-                    <Typography >LANDS</Typography>
-                </motion.h1>
-                <Swiper scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
-                    {showLands(businessInfo)}
-                </Swiper>
-
-                <motion.h1 variants={title} className="description_title-motion">
-                    <Typography >VIDEO</Typography>
-                </motion.h1>
-                <YoutubeEmbed embedId="rokGy0huYEA" />
+                <div className="detail_division">
+                    <div>
+                        <motion.h1 variants={title} className="description_title-motion">
+                            <Typography >LANDS</Typography>
+                        </motion.h1>
+                        <motion.div variants={title} className="swiper-desktop">
+                            <Swiper scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
+                                {showLands(businessInfo)}
+                            </Swiper>
+                        </motion.div>
+                    </div>
+                    
+                    <div>
+                        <motion.h1 variants={title} className="description_title-motion">
+                            <Typography >VIDEO</Typography>
+                        </motion.h1>
+                        <YoutubeEmbed embedId="rokGy0huYEA" />
+                    </div>
+                </div>
             </div>
         </BusinessDetailWrapper>
     );
 }
-

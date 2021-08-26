@@ -1,6 +1,6 @@
 export const content = {
     animate: {
-        transition: { staggerChildren: 0.1, delayChildren: 1 },
+        transition: { staggerChildren: 0.1, delayChildren: 1.8 },
     },
 };
 
