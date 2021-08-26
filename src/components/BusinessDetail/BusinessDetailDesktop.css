@@ -7,23 +7,62 @@
     flex-direction: column;
 }
 
-.detail_description-div {
+/* .detail_description-div {
     display: flex;
     flex-direction: row;
     margin-bottom: 6vh;
-}
+} */
 
-.detail_land_title {
-    letter-spacing: 1vw;
-}
-.description-image {
-    width: 50%;
-}
-
-.detail_description-div div {
+.description-slide {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: auto;
+}
+
+.description-slide > p {
+    letter-spacing: 1vw;
+    margin-top: 0;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.detail_description {
+    display: flex;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 0.3vw;
+}
+
+.detail_description > div {
     width: 100%;
-    justify-content: space-evenly;
+    margin: auto 0;
+    font-size: x-small;
+}
+
+.detail_description > img {
+    width: 50% !important;
+}
+
+.detail_category {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 3vw !important;
+    color: #464646;
+    font-size: 5vw !important;
+    font-weight: bold !important;
+}
+
+
+.description_title-motion {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.description_title-motion > p {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 1vw !important;
+    color: #464646;
+    font-size: 2vw !important;
+    font-weight: bold !important;
+}
+
+.swiper-container {
+    padding-bottom: 5vh !important;
 }

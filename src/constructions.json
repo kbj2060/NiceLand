@@ -1,5 +1,6 @@
 {
     "20210818-28-00" : {
+        "project_name": "Gaea",
         "category" : "FACTORY",
         "address" :  "곤지암읍 오향리 320-1 외 2",
         "lands" : [{
@@ -30,10 +31,11 @@
         "status" : "매매 미완료",
         "price" : "평당 350만원",
         "date" : "2021.08.18",
-        "represent_picture" : "/오향리320-1/오향리320-1_represent.jpg",
+        "represent_picture" : "/Gaea/Gaea_represent.jpg",
         "size": "총 1400평"
     },
     "20210818-28-01" : {
+        "project_name": "Gaea",
         "category" : "FACTORY",
         "address" : "곤지암읍 오향리 320-15",
         "lands" : [{
@@ -47,7 +49,7 @@
         "status" : "매매 미완료",
         "price" : "평당 350만원",
         "date" : "2021.08.18",
-        "represent_picture" : "/오향리320-1/오향리320-1_represent.jpg",
+        "represent_picture" : "/Gaea/Gaea_represent.jpg",
         "size": "총 1400평"
     }
 }

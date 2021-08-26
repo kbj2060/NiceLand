@@ -1,12 +1,7 @@
 import Transition from '../Transition/Transition';
 import { motion } from 'framer-motion';
+import {content} from './BusinessDetailMotion'
 import './BusinessDetail.css'
-
-const content = {
-    animate: {
-        transition: { staggerChildren: 0.1, delayChildren: 1.8 },
-    },
-};
 
 type Props = {
     children: JSX.Element,

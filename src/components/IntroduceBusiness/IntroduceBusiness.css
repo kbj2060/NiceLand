@@ -1,6 +1,7 @@
 #root {
     --swiper-theme-color : black;
 }
+
 .introduce_business_root {
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@
 
 .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }

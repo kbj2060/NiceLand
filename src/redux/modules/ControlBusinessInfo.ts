@@ -22,6 +22,7 @@ const defaultLandInfo: LandInfo = {
 }
 
 const initialState: BusinessInfo = {
+    'project_name' : '',
     'address':'',
     'status':'',
     'price':'',

@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import {useDispatch} from "react-redux";
 import { BusinessInfo } from "../../interfaces/BusinessInfo";
 import {saveBusinessInfo} from "../../redux/modules/ControlBusinessInfo"
+import { description, image, title } from "../BusinessDetail/BusinessDetailMotion";
+import { motion } from "framer-motion";
 
 // install Swiper modules
 SwiperCore.use([Scrollbar, Pagination]);
@@ -22,21 +24,24 @@ function IntroduceBusinessCard(props: BusinessInfo) {
     }
 
     return (
-        <div className="intro_image-div">
-            <a href={process.env.PUBLIC_URL + props.represent_picture} className="intro_image-div">
-                <img alt="intro_image" src={process.env.PUBLIC_URL + props.represent_picture} />
-            </a>
+        <motion.div
+                initial="initial"
+                animate="animate"
+                className="intro_image-div"
+            >
+            <motion.img 
+                variants={image}
+                alt="intro_image" 
+                src={process.env.PUBLIC_URL + props.represent_picture} />
             <div className="description-div">
-                <Typography className="description_category">{props.category}</Typography>
-                <div className="address_date-div">
-                    <p className="description">{props.address}</p>
-                    <p className="description_date">{props.date}</p>
-                </div>
+                <motion.p  variants={title} className="description_category">{props.category}</motion.p>
+                <motion.p variants={description} >{props.address}</motion.p>
+                <motion.p variants={description} >{props.date}</motion.p>
                 <Link to="/business_detail" className="more-button">
                     <Button variant="outlined" onClick={handleOnClick}>More</Button>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

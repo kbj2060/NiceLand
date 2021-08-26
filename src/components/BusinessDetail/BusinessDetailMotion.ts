@@ -1,3 +1,9 @@
+export const content = {
+    animate: {
+        transition: { staggerChildren: 0.1, delayChildren: 1 },
+    },
+};
+
 export const image = {
     initial: { x: -20, opacity: 0 },
     animate: {
