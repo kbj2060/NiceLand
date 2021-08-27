@@ -12,6 +12,22 @@
 
 #detail_description-desktop {
     display: flex;
+    height: 30vh;
+}
+
+#detail_description-desktop > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+#detail_description-desktop p {
+    letter-spacing: 0.5vw;
+    margin-top: 0;
+    font-size: 0.5vh;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 #swiper-desktop {
@@ -33,6 +49,14 @@
     height: 100%;
 }
 
+#video_detail {
+    width: 80%;
+}
+
 #detail_swiper {
     height: 50vh;
+}
+
+#description_address {
+    padding-bottom: 3vh;
 }

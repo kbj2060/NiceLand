@@ -43,6 +43,9 @@
     font-weight: bold !important
 }
 
+#swiper-mobile > .swiper-container {
+    height:30vh;
+}
 
 #description_title-motion {
     width: 100% !important;
@@ -57,7 +60,7 @@
     font-weight: bold !important;
 }
 
-/* #swiper-container {
-    padding-bottom: 5vh !important;
-} */
+#swiper-mobile {
+    height: 30vh;
+}
 

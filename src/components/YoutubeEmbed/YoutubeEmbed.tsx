@@ -3,11 +3,12 @@ import { image } from "../BusinessDetail/BusinessDetailMotion";
 import "./YoutubeEmbed.css"
 
 type Props = {
-    embedId: string
+    embedId: string,
+    width: string,
 }
 
-const YoutubeEmbed = ({ embedId }: Props) => (
-  <motion.div variants={image} className="video-responsive">
+const YoutubeEmbed = ({ embedId, width }: Props) => (
+  <motion.div variants={image} className="video-responsive" style={{width: width}}>
     <iframe
       width="853"
       height="480"

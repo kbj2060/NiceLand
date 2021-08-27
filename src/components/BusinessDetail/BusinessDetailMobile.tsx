@@ -11,7 +11,7 @@ import "swiper/components/pagination/pagination.min.css"
 import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
-import PersistedStore from "../../redux/store";
+import { store } from '../../redux/store';
 
 SwiperCore.use([Scrollbar, Pagination]);
 
@@ -50,9 +50,8 @@ function showLands(businessInfo: BusinessInfo) {
 }
 
 export default function BusinessDetailMobile() {
-    const {store, persistor}= PersistedStore(); 
     const businessInfo: BusinessInfo = store.getState().ControlBusinessInfo
-    console.log(typeof(businessInfo))
+
     return (
         <BusinessDetailWrapper>
             <div id="detail-div">
@@ -65,14 +64,14 @@ export default function BusinessDetailMobile() {
                     <Typography >LANDS</Typography>
                 </motion.h1>
                 <motion.div variants={title}>
-                    <Swiper scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
+                    <Swiper id="swiper-mobile" scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
                         {showLands(businessInfo)}
                     </Swiper>
                 </motion.div>
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >VIDEO</Typography>
                 </motion.h1>
-                <YoutubeEmbed embedId="rokGy0huYEA" />
+                <YoutubeEmbed embedId="rokGy0huYEA" width="100%" />
             </div>
         </BusinessDetailWrapper>
     );

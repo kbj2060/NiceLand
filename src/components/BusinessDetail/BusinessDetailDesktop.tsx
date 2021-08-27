@@ -11,7 +11,7 @@ import "swiper/components/pagination/pagination.min.css"
 import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
-import PersistedStore from "../../redux/store";
+import { store } from '../../redux/store';
 
 SwiperCore.use([Scrollbar, Pagination]);
 
@@ -22,7 +22,7 @@ function showLands(businessInfo: BusinessInfo) {
     return lands.map((land: LandInfo) => {
         return (
             <SwiperSlide key={land.address} id="description-slide" >
-                <p>{land.address}</p>
+                <p id="description_address" >{land.address}</p>
                 <div id="detail_description-desktop">
                     <motion.img 
                         variants={image}
@@ -50,9 +50,8 @@ function showLands(businessInfo: BusinessInfo) {
 }
 
 export default function BusinessDetailDesktop() {
-    const {store, persistor}= PersistedStore(); 
     const businessInfo: BusinessInfo = store.getState().ControlBusinessInfo
-    console.log(typeof(businessInfo))
+
     return (
         <BusinessDetailWrapper>
             <div id="detail-div-desktop">
@@ -73,11 +72,11 @@ export default function BusinessDetailDesktop() {
                         </motion.div>
                     </div>
                     
-                    <div>
+                    <div id="video_detail">
                         <motion.h1 variants={title} id="description_title-motion">
                             <Typography >VIDEO</Typography>
                         </motion.h1>
-                        <YoutubeEmbed embedId="rokGy0huYEA" />
+                        <YoutubeEmbed embedId="rokGy0huYEA" width="80%" />
                     </div>
                 </div>
             </div>
