@@ -1,5 +1,7 @@
 import { BusinessInfo } from "../../interfaces/BusinessInfo";
+import { LandInfo } from "../../interfaces/LandInfo";
 import { getFromLocalStorage } from "../../utils/getFromLocalStorage";
+import { setLocalStorage } from "../../utils/setLocalStorage";
 
 const SAVE_BUSINESS_INFO = "SAVE_BUSINESS_INFO";
 
@@ -8,20 +10,41 @@ export function saveBusinessInfo(info: BusinessInfo) {
 }
 
 export interface actionTypes {
-    type: "SAVE_BUSINESS_INFO";
+    type: typeof SAVE_BUSINESS_INFO;
     info: BusinessInfo;
 }
 
-const initialState: BusinessInfo = getFromLocalStorage('persist:root', 'ControlBusinessInfo')
+const defaultLandInfo: LandInfo = {
+    'address':"",
+    "owner" : "",
+    "buildingArea" :"",
+    "floorArea" : "",
+    "siteArea": "",
+    "buildingToLandRatio": "",
+    "floorAreaRatio": ""
+}
+
+const defaultState: BusinessInfo = {
+    'project_name' : '',
+    'address':'',
+    'status':'',
+    'price':'',
+    'date':'',
+    'represent_picture':'',
+    'size':'',
+    'category':'',
+    'lands': [defaultLandInfo]
+}
+
+const initialState: BusinessInfo = getFromLocalStorage('ControlBusinessInfo') || defaultState;
 
 function ControlBusinessInfo(
     state =initialState, action: actionTypes
 ) {
     switch(action.type){
         case SAVE_BUSINESS_INFO:
-            const info = action.info as BusinessInfo;
-            return info;
-
+            setLocalStorage('ControlBusinessInfo', action.info);
+            return action.info as BusinessInfo;
         default:
             return state
     }

@@ -25,10 +25,9 @@ function IntroduceBusinessCard(props: BusinessInfo) {
 
     return (
         <motion.div
-                initial="initial"
-                animate="animate"
-                className="intro_image-div"
-            >
+            initial="initial"
+            animate="animate"
+            className="intro_image-div" >
             <motion.img 
                 variants={image}
                 alt="intro_image" 
@@ -41,7 +40,7 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                 </div>
                 <motion.div variants={description} >
                     <Link to="/business_detail" className="more-button">
-                        <Button variant="outlined" onClick={handleOnClick}>More</Button>
+                        <Button variant="outlined" onClick={handleOnClick}  >More</Button>
                     </Link>
                 </motion.div>
             </div>
