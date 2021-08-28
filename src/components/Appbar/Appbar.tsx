@@ -11,7 +11,6 @@ export default function PermanentAppBar() {
                     <a href='/' className="logo-a">
                         <img alt="logo" color="inherit" src={process.env.PUBLIC_URL + '/logo.png'} className="logo"/>
                     </a>
-                    
                 </Toolbar>
             </AppBar>
         </div>

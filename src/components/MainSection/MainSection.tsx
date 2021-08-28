@@ -8,10 +8,10 @@ export default function MainSection() {
             <div className="company_logo-div">
                 <p className="company_logo">NICELAND</p>
                 <div className="main_buttons-div">
-                    <Button href="/intro_company" className="intro_button"  color="secondary" disableRipple={true}>
+                    <Button href={process.env.PUBLIC_URL + "/intro_company"} className="intro_button"  color="secondary" disableRipple={true}>
                         회사소개
                     </Button>
-                    <Button href="/intro_businesss" className="intro_button"  color="secondary" disableRipple={true}>
+                    <Button href={process.env.PUBLIC_URL + "/business_detail"} className="intro_button"  color="secondary" disableRipple={true}>
                         사업소개
                     </Button>
                 </div>

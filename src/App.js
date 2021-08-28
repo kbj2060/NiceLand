@@ -34,7 +34,7 @@ function App() {
                 <ThemeProvider theme={theme}>
                     <div className="App">
                         <PermanentAppBar />
-
+            
                         <Switch>
                             <Route path="/intro_company">
                                 
