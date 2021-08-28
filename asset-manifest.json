@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f77620f0.chunk.css",
-    "main.js": "/portfolio/static/js/main.75f3f95e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.75f3f95e.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.94e8fcfa.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.94e8fcfa.js.map",
-    "static/js/2.d6c2779f.chunk.js": "/portfolio/static/js/2.d6c2779f.chunk.js",
-    "static/js/2.d6c2779f.chunk.js.map": "/portfolio/static/js/2.d6c2779f.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.6bef83993ba7904cf08587b958e09a7b.js": "/portfolio/precache-manifest.6bef83993ba7904cf08587b958e09a7b.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.f77620f0.chunk.css.map": "/portfolio/static/css/main.f77620f0.chunk.css.map",
-    "static/js/2.d6c2779f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d6c2779f.chunk.js.LICENSE.txt",
-    "static/media/me.jpeg": "/portfolio/static/media/me.ba61ca38.jpeg",
-    "static/media/sad-icon.png": "/portfolio/static/media/sad-icon.b88924d5.png"
+    "main.css": "/NiceLand/static/css/main.7ef00f91.chunk.css",
+    "main.js": "/NiceLand/static/js/main.1e96f2f5.chunk.js",
+    "main.js.map": "/NiceLand/static/js/main.1e96f2f5.chunk.js.map",
+    "runtime-main.js": "/NiceLand/static/js/runtime-main.e088c6d9.js",
+    "runtime-main.js.map": "/NiceLand/static/js/runtime-main.e088c6d9.js.map",
+    "static/css/2.885c3689.chunk.css": "/NiceLand/static/css/2.885c3689.chunk.css",
+    "static/js/2.b6eebaaa.chunk.js": "/NiceLand/static/js/2.b6eebaaa.chunk.js",
+    "static/js/2.b6eebaaa.chunk.js.map": "/NiceLand/static/js/2.b6eebaaa.chunk.js.map",
+    "static/js/3.663667a2.chunk.js": "/NiceLand/static/js/3.663667a2.chunk.js",
+    "static/js/3.663667a2.chunk.js.map": "/NiceLand/static/js/3.663667a2.chunk.js.map",
+    "index.html": "/NiceLand/index.html",
+    "static/css/2.885c3689.chunk.css.map": "/NiceLand/static/css/2.885c3689.chunk.css.map",
+    "static/css/main.7ef00f91.chunk.css.map": "/NiceLand/static/css/main.7ef00f91.chunk.css.map",
+    "static/js/2.b6eebaaa.chunk.js.LICENSE.txt": "/NiceLand/static/js/2.b6eebaaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.94e8fcfa.js",
-    "static/js/2.d6c2779f.chunk.js",
-    "static/css/main.f77620f0.chunk.css",
-    "static/js/main.75f3f95e.chunk.js"
+    "static/js/runtime-main.e088c6d9.js",
+    "static/css/2.885c3689.chunk.css",
+    "static/js/2.b6eebaaa.chunk.js",
+    "static/css/main.7ef00f91.chunk.css",
+    "static/js/main.1e96f2f5.chunk.js"
   ]
 }
