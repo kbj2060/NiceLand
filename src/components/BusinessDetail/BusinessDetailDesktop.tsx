@@ -21,8 +21,8 @@ function showLands(businessInfo: BusinessInfo) {
 
     return lands.map((land: LandInfo) => {
         return (
-            <SwiperSlide key={land.address} id="description-slide" >
-                <p id="description_address" >{land.address}</p>
+            <SwiperSlide key={land.address} id="description-slide-desktop" >
+                <p id="description_address-desktop" >{land.address}</p>
                 <div id="detail_description-desktop">
                     <motion.img 
                         variants={image}
@@ -55,8 +55,8 @@ export default function BusinessDetailDesktop() {
     return (
         <BusinessDetailWrapper>
             <div id="detail-div-desktop">
-                <motion.h1 variants={title}>
-                    <Typography id="detail_category">FACTORY</Typography>
+                <motion.h1 variants={title} >
+                    <Typography id="detail_category">{businessInfo.category}</Typography>
                 </motion.h1>
                 <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
 

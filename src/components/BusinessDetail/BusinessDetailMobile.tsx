@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 import { Typography } from '@material-ui/core';
 import { LandInfo } from '../../interfaces/LandInfo';
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {Scrollbar, Pagination} from 'swiper/core';
+import SwiperCore, {Navigation} from 'swiper/core';
 import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
 import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 import { store } from '../../redux/store';
 
-SwiperCore.use([Scrollbar, Pagination]);
+SwiperCore.use([Navigation]);
 
 
 function showLands(businessInfo: BusinessInfo) {
@@ -56,7 +56,7 @@ export default function BusinessDetailMobile() {
         <BusinessDetailWrapper>
             <div id="detail-div">
                 <motion.h1 variants={title}>
-                    <Typography id="detail_category">FACTORY</Typography>
+                    <Typography id="detail_category">{businessInfo.category}</Typography>
                 </motion.h1>
                 <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
 
@@ -64,7 +64,13 @@ export default function BusinessDetailMobile() {
                     <Typography >LANDS</Typography>
                 </motion.h1>
                 <motion.div variants={title}>
-                    <Swiper id="swiper-mobile" scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
+                <button className="custom_next">Custom Next Btn</button>
+                <button className="custom_prev">Custom Next Btn</button>
+
+                    <Swiper id="swiper-mobile" navigation={{
+          nextEl: ".custom_next",
+          prevEl: ".custom_prev"
+        }} >
                         {showLands(businessInfo)}
                     </Swiper>
                 </motion.div>

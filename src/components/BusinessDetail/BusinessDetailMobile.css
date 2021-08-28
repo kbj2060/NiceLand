@@ -8,7 +8,7 @@
 #description-slide > p {
     letter-spacing: 1vw;
     margin-top: 0;
-    font-size: 1vh;
+    font-size: 2vh;
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -22,17 +22,21 @@
 #detail_description > div {
     width: 100%;
     margin: auto 0;
-    font-size: x-small;
+    font-size: 1vh;
 }
 
 #detail_description > img {
-    width: 50%;
-    height: auto;
+    /* width: 50%;
+    height: auto; */
+    /* width: 50vw;
+    height: 15vh; */
+    object-fit: cover;
 }
 
 #description-slide {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 #detail_category {
@@ -59,8 +63,3 @@
     font-size: 2vw !important;
     font-weight: bold !important;
 }
-
-#swiper-mobile {
-    height: 30vh;
-}
-
