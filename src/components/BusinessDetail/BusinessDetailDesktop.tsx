@@ -5,15 +5,16 @@ import { motion } from 'framer-motion';
 import { Typography } from '@material-ui/core';
 import { LandInfo } from '../../interfaces/LandInfo';
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {Scrollbar, Pagination} from 'swiper/core';
+import SwiperCore, {Navigation} from 'swiper/core';
 import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
 import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 import { store } from '../../redux/store';
-
-SwiperCore.use([Scrollbar, Pagination]);
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import IconButton from '@material-ui/core/IconButton';
 
 
 function showLands(businessInfo: BusinessInfo) {
@@ -54,31 +55,40 @@ export default function BusinessDetailDesktop() {
 
     return (
         <BusinessDetailWrapper>
-            <div id="detail-div-desktop">
-                <motion.h1 variants={title} >
+            <div id="detail-div">
+                <motion.h1 variants={title}>
                     <Typography id="detail_category">{businessInfo.category}</Typography>
                 </motion.h1>
                 <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
 
-                <div id="detail_division">
-                    <div id="lands_detail">
+                <motion.div id="lands-and-video-div" variants={title}>
+                    <motion.div id="lands-div" variants={title}>
                         <motion.h1 variants={title} id="description_title-motion">
                             <Typography >LANDS</Typography>
                         </motion.h1>
-                        <motion.div variants={title} id="swiper-desktop">
-                            <Swiper id="detail_swiper" scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
+                        <motion.div id="swiper-navigation-desktop" variants={title}>
+                            <IconButton >
+                                <ArrowBackIosIcon className="custom_prev" />
+                            </IconButton>
+                            <Swiper id="swiper-desktop" navigation={{
+                                nextEl: ".custom_next",
+                                prevEl: ".custom_prev"
+                                }} >
                                 {showLands(businessInfo)}
                             </Swiper>
+                            <IconButton >
+                                <ArrowForwardIosIcon className="custom_next" />
+                            </IconButton>
                         </motion.div>
-                    </div>
-                    
-                    <div id="video_detail">
+                    </motion.div>
+                    <motion.div id="video-div" variants={title}>
                         <motion.h1 variants={title} id="description_title-motion">
                             <Typography >VIDEO</Typography>
                         </motion.h1>
                         <YoutubeEmbed embedId="rokGy0huYEA" width="80%" />
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
+
             </div>
         </BusinessDetailWrapper>
     );

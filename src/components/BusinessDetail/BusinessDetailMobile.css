@@ -5,18 +5,10 @@
     margin: 0 auto;
 }
 
-#description-slide > p {
-    letter-spacing: 1vw;
-    margin-top: 0;
-    font-size: 2vh;
-    font-family: 'Do Hyeon', sans-serif;
-}
-
 #detail_description {
     display: flex;
     font-family: 'Do Hyeon', sans-serif;
     letter-spacing: 0.3vw;
-    width: 80vw;
 }
 
 #detail_description > div {
@@ -26,10 +18,6 @@
 }
 
 #detail_description > img {
-    /* width: 50%;
-    height: auto; */
-    /* width: 50vw;
-    height: 15vh; */
     object-fit: cover;
 }
 
@@ -37,6 +25,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+#description-slide > p {
+    letter-spacing: 1vw;
+    margin-top: 0;
+    font-size: 2vw;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 #detail_category {
@@ -47,9 +42,9 @@
     font-weight: bold !important
 }
 
-#swiper-mobile > .swiper-container {
+/* #swiper-mobile > .swiper-container {
     height:30vh;
-}
+} */
 
 #description_title-motion {
     width: 100% !important;
@@ -60,6 +55,16 @@
     font-family: 'Hahmlet', serif !important;
     letter-spacing: 1vw !important;
     color: #464646;
-    font-size: 2vw !important;
+    font-size: 3vw;
     font-weight: bold !important;
+}
+
+#swiper-navigation-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MuiIconButton-root {
+    color: black !important;
 }

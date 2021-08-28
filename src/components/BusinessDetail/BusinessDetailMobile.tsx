@@ -12,6 +12,9 @@ import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 import { store } from '../../redux/store';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import IconButton from '@material-ui/core/IconButton';
 
 SwiperCore.use([Navigation]);
 
@@ -63,21 +66,25 @@ export default function BusinessDetailMobile() {
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >LANDS</Typography>
                 </motion.h1>
-                <motion.div variants={title}>
-                <button className="custom_next">Custom Next Btn</button>
-                <button className="custom_prev">Custom Next Btn</button>
-
+                <motion.div id="swiper-navigation-mobile" variants={title}>
+                    <IconButton >
+                        <ArrowBackIosIcon className="custom_prev" />
+                    </IconButton>
                     <Swiper id="swiper-mobile" navigation={{
-          nextEl: ".custom_next",
-          prevEl: ".custom_prev"
-        }} >
+                        nextEl: ".custom_next",
+                        prevEl: ".custom_prev"
+                        }} >
                         {showLands(businessInfo)}
                     </Swiper>
+                    <IconButton >
+                        <ArrowForwardIosIcon className="custom_next" />
+                    </IconButton>
                 </motion.div>
+                
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >VIDEO</Typography>
                 </motion.h1>
-                <YoutubeEmbed embedId="rokGy0huYEA" width="100%" />
+                <YoutubeEmbed embedId="rokGy0huYEA" width="80%" />
             </div>
         </BusinessDetailWrapper>
     );
