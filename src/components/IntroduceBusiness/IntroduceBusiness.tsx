@@ -11,6 +11,7 @@ import { BusinessInfo } from "../../interfaces/BusinessInfo";
 import {saveBusinessInfo} from "../../redux/modules/ControlBusinessInfo"
 import { description, image, title } from "../BusinessDetail/BusinessDetailMotion";
 import { motion } from "framer-motion";
+import { PAGEPATH } from "../../enums";
 
 // install Swiper modules
 SwiperCore.use([Scrollbar, Pagination]);
@@ -39,7 +40,7 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                     <motion.p variants={description} >{props.date}</motion.p>
                 </div>
                 <motion.div variants={description} >
-                    <Link to="/business_detail" className="more-button">
+                    <Link to={PAGEPATH.DETAIL_BUSINESS} className="more-button">
                         <Button variant="outlined" onClick={handleOnClick}  >More</Button>
                     </Link>
                 </motion.div>

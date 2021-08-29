@@ -1,5 +1,5 @@
 #detail-div {
-    width: 60vw;
+    width: 60vw !important;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -20,7 +20,7 @@
 #detail_description-desktop p {
     letter-spacing: 0.2vw;
     margin-top: 0;
-    font-size: 2vh;
+    font-size: 1vw;
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -63,7 +63,7 @@
 
 #description-slide-desktop > p {
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 3vh !important;
+    font-size: 1.5vw !important;
 }
 
 #swiper-navigation-desktop {
@@ -74,4 +74,12 @@
 
 #description_title-motion > p {
     font-size: 2vw !important;
+}
+
+#detail_category-desktop {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 3vw !important;
+    color: #464646;
+    font-size: 3vw !important;
+    font-weight: bold !important
 }

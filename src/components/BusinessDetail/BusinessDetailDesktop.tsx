@@ -57,7 +57,7 @@ export default function BusinessDetailDesktop() {
         <BusinessDetailWrapper>
             <div id="detail-div">
                 <motion.h1 variants={title}>
-                    <Typography id="detail_category">{businessInfo.category}</Typography>
+                    <Typography id="detail_category-desktop">{businessInfo.category}</Typography>
                 </motion.h1>
                 <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
 

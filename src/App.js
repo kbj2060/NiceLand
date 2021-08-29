@@ -14,7 +14,7 @@ import grey from '@material-ui/core/colors/grey';
 import './App.css';
 import BusinessDetail from "./components/BusinessDetail/BusinessDetail";
 import { AnimatePresence } from "framer-motion";
-
+import { PAGEPATH } from "./enums";
 
 const theme = createTheme({
     palette: {
@@ -30,23 +30,23 @@ const theme = createTheme({
 function App() {
     return (
         <AnimatePresence>
-            <Router basename="https://kbj2060.github.io/NiceLand">
+            <Router>
                 <ThemeProvider theme={theme}>
                     <div className="App">
                         <PermanentAppBar />
             
                         <Switch>
-                            <Route exact path='/'>
-                                <MainSection />
-                            </Route>
-                            <Route path='/intro_company'>
+                            <Route exact path={PAGEPATH.INTRO_COMPANY}>
                                 
                             </Route>
-                            <Route path='/intro_businesss' >
+                            <Route exact path={PAGEPATH.INTRO_BUSINESS} >
                                 <IntroduceBusiness />
                             </Route>
-                            <Route path='/business_detail'>
+                            <Route exact path={PAGEPATH.DETAIL_BUSINESS} >
                                 <BusinessDetail />
+                            </Route>
+                            <Route path={PAGEPATH.MAIN} >
+                                <MainSection />
                             </Route>
                         </Switch>
                         
