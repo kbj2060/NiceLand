@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/NiceLand/static/css/main.4149eb53.chunk.css",
-    "main.js": "/NiceLand/static/js/main.62250dd8.chunk.js",
-    "main.js.map": "/NiceLand/static/js/main.62250dd8.chunk.js.map",
+    "main.css": "/NiceLand/static/css/main.195dd31b.chunk.css",
+    "main.js": "/NiceLand/static/js/main.80edb317.chunk.js",
+    "main.js.map": "/NiceLand/static/js/main.80edb317.chunk.js.map",
     "runtime-main.js": "/NiceLand/static/js/runtime-main.e088c6d9.js",
     "runtime-main.js.map": "/NiceLand/static/js/runtime-main.e088c6d9.js.map",
     "static/css/2.885c3689.chunk.css": "/NiceLand/static/css/2.885c3689.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.663667a2.chunk.js.map": "/NiceLand/static/js/3.663667a2.chunk.js.map",
     "index.html": "/NiceLand/index.html",
     "static/css/2.885c3689.chunk.css.map": "/NiceLand/static/css/2.885c3689.chunk.css.map",
-    "static/css/main.4149eb53.chunk.css.map": "/NiceLand/static/css/main.4149eb53.chunk.css.map",
+    "static/css/main.195dd31b.chunk.css.map": "/NiceLand/static/css/main.195dd31b.chunk.css.map",
     "static/js/2.50f0856b.chunk.js.LICENSE.txt": "/NiceLand/static/js/2.50f0856b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e088c6d9.js",
     "static/css/2.885c3689.chunk.css",
     "static/js/2.50f0856b.chunk.js",
-    "static/css/main.4149eb53.chunk.css",
-    "static/js/main.62250dd8.chunk.js"
+    "static/css/main.195dd31b.chunk.css",
+    "static/js/main.80edb317.chunk.js"
   ]
 }
