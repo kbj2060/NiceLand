@@ -1,5 +1,5 @@
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
@@ -30,25 +30,23 @@ const theme = createTheme({
 function App() {
     return (
         <AnimatePresence>
-            <Router basename="https://kbj2060.github.io/NiceLand">
+            <Router >
                 <ThemeProvider theme={theme}>
                     <div className="App">
                         <PermanentAppBar />
             
-                        <Switch>
-                            <Route path={PAGEPATH.INTRO_COMPANY}>
-                                
-                            </Route>
-                            <Route path={PAGEPATH.INTRO_BUSINESS} >
-                                <IntroduceBusiness />
-                            </Route>
-                            <Route path={PAGEPATH.DETAIL_BUSINESS} >
-                                <BusinessDetail />
-                            </Route>
-                            <Route exact path={PAGEPATH.MAIN} >
-                                <MainSection />
-                            </Route>
-                        </Switch>
+                        <Route exact path={PAGEPATH.MAIN} >
+                            <MainSection />
+                        </Route>
+                        <Route path={PAGEPATH.INTRO_COMPANY}>
+                            
+                        </Route>
+                        <Route path={PAGEPATH.INTRO_BUSINESS} >
+                            <IntroduceBusiness />
+                        </Route>
+                        <Route path={PAGEPATH.DETAIL_BUSINESS} >
+                            <BusinessDetail />
+                        </Route>
                         
                         <footer className="info-footer">
                             <p className="info-text">(주) 나이스랜드 | 경기도 용인시 처인구 외대로 46-1</p>
