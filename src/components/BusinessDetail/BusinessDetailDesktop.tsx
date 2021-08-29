@@ -55,7 +55,7 @@ export default function BusinessDetailDesktop() {
 
     return (
         <BusinessDetailWrapper>
-            <div id="detail-div">
+            <div id="detail-div-desktop">
                 <motion.h1 variants={title}>
                     <Typography id="detail_category-desktop">{businessInfo.category}</Typography>
                 </motion.h1>
