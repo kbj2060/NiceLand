@@ -39,7 +39,7 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                     <motion.p variants={description} >{props.date}</motion.p>
                 </div>
                 <motion.div variants={description} >
-                    <Link to={process.env.PUBLIC_URL + "/business_detail"} className="more-button">
+                    <Link to="/business_detail" className="more-button">
                         <Button variant="outlined" onClick={handleOnClick}  >More</Button>
                     </Link>
                 </motion.div>

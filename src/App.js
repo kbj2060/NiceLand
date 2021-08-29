@@ -30,23 +30,23 @@ const theme = createTheme({
 function App() {
     return (
         <AnimatePresence>
-            <Router>
+            <Router basename="https://kbj2060.github.io/NiceLand">
                 <ThemeProvider theme={theme}>
                     <div className="App">
                         <PermanentAppBar />
             
                         <Switch>
-                            <Route path="/intro_company">
+                            <Route exact path='/'>
+                                <MainSection />
+                            </Route>
+                            <Route path='/intro_company'>
                                 
                             </Route>
-                            <Route path="/intro_businesss">
+                            <Route path='/intro_businesss' >
                                 <IntroduceBusiness />
                             </Route>
-                            <Route path="/business_detail">
+                            <Route path='/business_detail'>
                                 <BusinessDetail />
-                            </Route>
-                            <Route path="/">
-                                <MainSection />
                             </Route>
                         </Switch>
                         
