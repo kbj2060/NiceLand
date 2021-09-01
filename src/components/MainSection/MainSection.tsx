@@ -10,14 +10,14 @@ export default function MainSection() {
             <div className="company_logo-div">
                 <p className="company_logo">NICELAND</p>
                 <div className="main_buttons-div">
-                    <Button className="intro_button"  color="secondary" disableRipple={true}>
-                        <Link to={PAGEPATH.INTRO_COMPANY} >
-                        회사소개
+                    <Button className="intro_button" color="secondary" disableRipple={true}>
+                        <Link  className="intro_button"  to={PAGEPATH.INTRO_COMPANY} >
+                            회사소개
                         </Link>
                     </Button>
-                    <Button className="intro_button"  color="secondary" disableRipple={true}>
-                        <Link to={PAGEPATH.INTRO_BUSINESS} >
-                        사업소개
+                    <Button className="intro_button" color="secondary" disableRipple={true}>
+                        <Link className="intro_button" to={PAGEPATH.INTRO_BUSINESS} >
+                            사업소개
                         </Link>
                     </Button>
                 </div>

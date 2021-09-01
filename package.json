@@ -1,9 +1,9 @@
 {
-    "homepage": "https://kbj2060.github.io/NiceLand",
-    "name": "niceland",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
+  "homepage": "https://kbj2060.github.io/NiceLand",
+  "name": "niceland",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@react-three/drei": "^7.5.0",
@@ -33,14 +33,14 @@
     "three": "^0.131.3",
     "typescript": "^4.3.5",
     "web-vitals": "^1.0.1"
-},
-"scripts": {
+  },
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

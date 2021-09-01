@@ -1,5 +1,5 @@
 #detail-div-desktop {
-    width: 65vw !important;
+    width: 60vw !important;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -7,7 +7,7 @@
 
 #detail_description-desktop {
     display: flex;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', sans-serif;
     letter-spacing: 0.3vw;
 }
 
@@ -21,7 +21,7 @@
     letter-spacing: 0.2vw;
     margin-top: 0;
     font-size: 1vw;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', sans-serif;
 }
 
 #swiper-desktop {
@@ -41,15 +41,16 @@
 
 #lands-and-video-div {
     display: flex;
+    flex-direction: column;
 }
-
+/* 
 #lands-div {
     width: 50%;
 }
 
 #video-div {
     width: 50%;
-}
+} */
 
 #description_address {
     padding-bottom: 3vh;
@@ -62,7 +63,7 @@
 }
 
 #description-slide-desktop > p {
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', sans-serif;
     font-size: 1.5vw !important;
 }
 
@@ -70,6 +71,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 #description_title-motion > p {
@@ -82,4 +84,13 @@
     color: #464646;
     font-size: 3vw !important;
     font-weight: bold !important
+}
+
+#description_title-motion-desktop {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 0.2vw !important;
+    color: #464646;
+    font-size: 2vw !important;
+    text-align: left;
+    padding-top: 3vh;
 }

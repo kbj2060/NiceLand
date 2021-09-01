@@ -36,8 +36,8 @@ function IntroduceBusinessCard(props: BusinessInfo) {
             <div className="description-div">
                 <motion.p  variants={title} className="description_category">{props.category}</motion.p>
                 <div>
-                    <motion.p variants={description} >{props.address}</motion.p>
-                    <motion.p variants={description} >{props.date}</motion.p>
+                    <motion.p variants={description} className="description">{props.address}</motion.p>
+                    <motion.p variants={description} className="description">{props.date}</motion.p>
                 </div>
                 <motion.div variants={description} >
                     <Link to={PAGEPATH.DETAIL_BUSINESS} className="more-button">
@@ -66,7 +66,7 @@ export default function IntroduceBusiness() {
     return (
         <div className="introduce_business_root">
             <div className="title-div">
-                <Typography className="title">PROJECTS</Typography>
+                <Typography className="title">WORKS</Typography>
             </div>
             <Swiper scrollbar={{ draggable: true }} pagination={{ clickable: true }}>
                 {render_all_cards()}

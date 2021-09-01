@@ -5,12 +5,22 @@
     /* height: 100%; */
     width: 100%;
     margin: 0 auto;
-  }
-  
-  .video-responsive iframe {
+}
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.video-responsive iframe {
     left: 0;
     top: 0;
     width: 100%;
     height: -webkit-fill-available;
     position: absolute;
-  }
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

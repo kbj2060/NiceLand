@@ -34,6 +34,9 @@ function showLands(businessInfo: BusinessInfo) {
                         />
                     <div>
                         <motion.p variants={description} >
+                            부지 : {land.size}
+                        </motion.p>
+                        <motion.p variants={description} >
                             건축면적 : {land.buildingArea}
                         </motion.p>
                         <motion.p variants={description} >

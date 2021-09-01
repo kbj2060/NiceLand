@@ -5,5 +5,6 @@ export type LandInfo = {
     floorArea : string,
     siteArea: string,
     buildingToLandRatio: string,
-    floorAreaRatio: string
+    floorAreaRatio: string,
+    size: string
 }

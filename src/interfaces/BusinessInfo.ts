@@ -8,6 +8,5 @@ export type BusinessInfo = {
     date : string,
     lands : LandInfo[],
     represent_picture : string,
-    size : string,
     category : string
 }

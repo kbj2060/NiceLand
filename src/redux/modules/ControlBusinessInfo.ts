@@ -15,25 +15,25 @@ export interface actionTypes {
 }
 
 const defaultLandInfo: LandInfo = {
-    'address':"",
-    "owner" : "",
-    "buildingArea" :"",
-    "floorArea" : "",
-    "siteArea": "",
-    "buildingToLandRatio": "",
-    "floorAreaRatio": ""
+    address:"",
+    owner : "",
+    buildingArea :"",
+    floorArea : "",
+    siteArea: "",
+    buildingToLandRatio: "",
+    floorAreaRatio: "",
+    size: "",
 }
 
 const defaultState: BusinessInfo = {
-    'project_name' : '',
-    'address':'',
-    'status':'',
-    'price':'',
-    'date':'',
-    'represent_picture':'',
-    'size':'',
-    'category':'',
-    'lands': [defaultLandInfo]
+    project_name : "",
+    address : "",
+    status : "",
+    price : "",
+    date : "",
+    represent_picture : "",
+    category : "",
+    lands: [defaultLandInfo]
 }
 
 const initialState: BusinessInfo = getFromLocalStorage('ControlBusinessInfo') || defaultState;

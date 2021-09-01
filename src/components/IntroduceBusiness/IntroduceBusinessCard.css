@@ -10,7 +10,6 @@
     align-items: flex-start;
     justify-content: center;
     margin: 0 auto;
-    padding-left: 3vw;
 }
 
 .description-div > div {
@@ -19,13 +18,12 @@
     flex-direction: column;
     align-content: flex-end;
     width: 100%;
-    font-size: 1vw !important;
-
+    font-size: 1.8vh !important
 }
 
 .description_category {
     font-family: 'Hahmlet', serif !important;
-    letter-spacing: 3vw !important;
+    letter-spacing: 2vw !important;
     color: #464646;
     font-size: 5vw !important;
     font-weight: bold !important;
@@ -33,8 +31,8 @@
 }
 
 .description {
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 1vw;
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 2vw !important;
 }
 /* 
 .address_date-div {
@@ -46,7 +44,7 @@
 } */
 
 .description_date {
-    font-family: Noto Sans KR;
+    font-family: 'Noto Serif KR', sans-serif;
     /* font-weight: bold; */
     margin : 1vh;
     font-size: 1vw;

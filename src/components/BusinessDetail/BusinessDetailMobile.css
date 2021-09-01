@@ -7,7 +7,7 @@
 
 #detail_description {
     display: flex;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', sans-serif;
     letter-spacing: 0.3vw;
 }
 
@@ -31,7 +31,7 @@
     letter-spacing: 1vw;
     margin-top: 0;
     font-size: 2vw;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', sans-serif;
 }
 
 #detail_category {
@@ -66,5 +66,5 @@
 }
 
 .MuiIconButton-root {
-    color: black !important;
+    color: #464646 !important;
 }

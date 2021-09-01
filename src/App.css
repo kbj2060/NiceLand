@@ -1,6 +1,5 @@
 .App {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     text-align: center;
     color: black;
@@ -12,12 +11,12 @@
     flex-direction: column;
     align-items: flex-end;
     color: #918d8d;
-    padding-top: 3vh;
+    padding-top: 0.5vh;
 }
 
 .info-text {
-    font-size: 0.5vw !important;
-    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1vh !important;
+    font-family: 'Noto Serif KR', sans-serif;
     font-weight: 100;
     margin: 0;
     padding-right: 1vw;
