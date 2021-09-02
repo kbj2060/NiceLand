@@ -10,7 +10,7 @@ const blackBox = {
     animate: {
       height: 0,
       transition: {
-        when: "afterChildren",
+        when: "afterChild ren",
         duration: 0.5,
         ease: [0.87, 0, 0.13, 1],
       },

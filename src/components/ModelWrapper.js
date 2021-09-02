@@ -7,28 +7,24 @@ function Model({path}) {
     const mesh = useRef()
 
     useFrame(({ clock, camera }) => {
-        const t = clock.getElapsedTime()/2;
+        const t = clock.getElapsedTime()/3;
         const x = Math.sin(t);
         const z = Math.cos(t);
-        camera.position.z = x;
-        camera.position.x = z;
+        camera.position.x = x;
+        camera.position.z = z;
     })
 
     return <primitive ref={mesh} object={scene} />;
 }
 
 export default function ModelWrapper({path}) {
-    // useThree(({camera}) => {
-    //     camera.rotation.set(deg2rad(30), 0, 0);
-    // });
-
     return (
-        <Canvas camera={{ position: [-3, 0.1, 10], fov: 25 }}>
+        <Canvas  camera={{ position: [1, 0.2, 1], fov: 30 }} >
             <ambientLight intensity={1} />
             <Suspense fallback={null}>
                 <Model path={path} />
             </Suspense>
-            <OrbitControls autoRotateSpeed={0.4} enableZoom={false} />
+            <OrbitControls  enableZoom={false} />
         </Canvas>
     );
 }
