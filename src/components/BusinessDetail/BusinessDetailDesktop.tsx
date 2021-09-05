@@ -85,7 +85,7 @@ export default function BusinessDetailDesktop() {
                     <motion.h1 variants={title} >
                         <Typography id="description_title-motion-desktop">VIDEO</Typography>
                     </motion.h1>
-                    <YoutubeEmbed embedId="rokGy0huYEA" width="80%" />
+                    <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" />
                 </motion.div>
 
             </div>

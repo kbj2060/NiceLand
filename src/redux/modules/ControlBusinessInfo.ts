@@ -33,6 +33,7 @@ const defaultState: BusinessInfo = {
     date : "",
     represent_picture : "",
     category : "",
+    youtubeId: "",
     lands: [defaultLandInfo]
 }
 

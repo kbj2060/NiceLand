@@ -8,5 +8,6 @@ export type BusinessInfo = {
     date : string,
     lands : LandInfo[],
     represent_picture : string,
-    category : string
+    category : string,
+    youtubeId : string,
 }

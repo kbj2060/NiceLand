@@ -87,7 +87,7 @@ export default function BusinessDetailMobile() {
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >VIDEO</Typography>
                 </motion.h1>
-                <YoutubeEmbed embedId="rokGy0huYEA" width="80%" />
+                <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" />
             </div>
         </BusinessDetailWrapper>
     );

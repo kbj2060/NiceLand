@@ -8,9 +8,9 @@ import { useEffect } from 'react';
 export default function BusinessDetail() {
     const width = useWindowDimensions();
 
-    useEffect(()=> {
-        window.onbeforeunload = function () { window.scrollTo(0, 0); }
-    }, [])
+    // useEffect(()=> {
+    //     window.onbeforeunload = function () { window.scrollTo(0, 0); }
+    // }, [])
 
     return (
         <>
