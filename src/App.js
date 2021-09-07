@@ -6,6 +6,7 @@ import {
 import PermanentAppBar from './components/Appbar/Appbar.tsx';
 import MainSection from './components/MainSection/MainSection.tsx';
 import IntroduceBusiness from './components/IntroduceBusiness/IntroduceBusiness'
+import IntroduceCompany from './components/IntroduceCompany/IntroduceCompany'
 
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
@@ -38,7 +39,7 @@ function App() {
                             <MainSection />
                         </Route>
                         <Route path={PAGEPATH.INTRO_COMPANY}>
-                            
+                            <IntroduceCompany />
                         </Route>
                         <Route path={PAGEPATH.INTRO_BUSINESS} >
                             <IntroduceBusiness />
