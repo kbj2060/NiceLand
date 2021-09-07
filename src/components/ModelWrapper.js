@@ -13,10 +13,10 @@ function Model({path}) {
     //     camera.position.x = x/2;
     //     camera.position.z = z/2;
     // })
-    useFrame((state, delta) => {
-        mesh.current.rotation.y += 0.005
-        state.camera.position.y = 1
-    })
+    // useFrame((state, delta) => {
+    //     mesh.current.rotation.y += 0.005
+    //     state.camera.position.y = 1
+    // })
 
     return <primitive ref={mesh} object={scene} />;
 }

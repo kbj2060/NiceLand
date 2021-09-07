@@ -22,7 +22,6 @@ function showLands(businessInfo: BusinessInfo) {
     return lands.map((land: LandInfo) => {
         return (
             <SwiperSlide key={land.address} id="description-slide-desktop" >
-                <p id="description_address-desktop" >{land.address}</p>
                 <div id="detail_description-desktop">
                     <motion.img 
                         variants={image}
@@ -30,6 +29,7 @@ function showLands(businessInfo: BusinessInfo) {
                         src={process.env.PUBLIC_URL+`/${businessInfo.project_name}/${land.address}_airplaneview.png`}
                         />
                     <div>
+                        <p id="description_address-desktop" >{land.address}</p>
                         <motion.p variants={description} >
                             부지 : {land.size}
                         </motion.p>

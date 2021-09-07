@@ -43,14 +43,6 @@
     display: flex;
     flex-direction: column;
 }
-/* 
-#lands-div {
-    width: 50%;
-}
-
-#video-div {
-    width: 50%;
-} */
 
 #description_address {
     padding-bottom: 3vh;
@@ -74,8 +66,8 @@
     width: 100%;
 }
 
-#description_title-motion > p {
-    font-size: 2vw !important;
+#description_address-desktop {
+    font-size: 1.5vw !important;
 }
 
 #detail_category-desktop {
@@ -93,4 +85,5 @@
     font-size: 2vw !important;
     text-align: left;
     padding-top: 3vh;
+    text-align: center;
 }
