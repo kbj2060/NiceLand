@@ -8,13 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Navigation} from 'swiper/core';
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css"
-import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 import { store } from '../../redux/store';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import IconButton from '@material-ui/core/IconButton';
+// import MotionIcon from '../../utils/MotionIcon';
 
 SwiperCore.use([Navigation]);
 
@@ -64,7 +64,8 @@ export default function BusinessDetailMobile() {
                 <motion.h1 variants={title}>
                     <Typography id="detail_category">{businessInfo.category}</Typography>
                 </motion.h1>
-                <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
+                
+                {/* <MotionIcon/> */}
 
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >LANDS</Typography>
@@ -87,7 +88,7 @@ export default function BusinessDetailMobile() {
                 <motion.h1 variants={title} id="description_title-motion">
                     <Typography >VIDEO</Typography>
                 </motion.h1>
-                <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" />
+                <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" isMobile={true}/>
             </div>
         </BusinessDetailWrapper>
     );

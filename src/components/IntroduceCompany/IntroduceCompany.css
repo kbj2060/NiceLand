@@ -12,9 +12,24 @@
     margin: 0 auto;
 }
 
+#leftArticle  h1, #rightArticle  h1 {
+    font-family: 'Hahmlet', serif !important;
+    letter-spacing: 0.2vw !important;
+    color: black;
+    font-size: 2.5vh !important;
+}
+
+#leftArticle  p, #rightArticle  p {
+    font-family: 'Noto Serif KR', sans-serif;
+    letter-spacing: 0.2vw !important;
+    color: black;
+    font-size: 2vh !important;
+    border-top: 1px solid black;
+}
+
 #background_image-div-desktop {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 
 #background_image-div-mobile {
@@ -25,4 +40,29 @@
 #background_image {
     width: 100%;
     height : 100%;
+}
+
+#leftArticle {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 3vw;
+    padding-top: 1.8vh;
+}
+
+#rightArticle {
+    /* width: 100%; */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 3vw;
+    padding-top: 1.8vh;
+}
+
+#article {
+    display: flex;
+    flex-direction: row;
 }

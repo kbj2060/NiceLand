@@ -7,13 +7,13 @@ import { LandInfo } from '../../interfaces/LandInfo';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css"
-import ModelWrapper from '../ModelWrapper';
 import { BusinessInfo } from '../../interfaces/BusinessInfo';
 import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 import { store } from '../../redux/store';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import IconButton from '@material-ui/core/IconButton';
+// import MotionIcon from '../../utils/MotionIcon';
 
 
 function showLands(businessInfo: BusinessInfo) {
@@ -61,7 +61,8 @@ export default function BusinessDetailDesktop() {
                 <motion.h1 variants={title}>
                     <Typography id="detail_category-desktop">{businessInfo.category}</Typography>
                 </motion.h1>
-                <ModelWrapper path={`/${businessInfo.project_name}/${businessInfo.project_name}.glb`} />
+                
+                {/* <MotionIcon/> */}
 
                 <motion.div id="lands-and-video-div" variants={title}>
                     <motion.h1 variants={title}>
@@ -85,7 +86,7 @@ export default function BusinessDetailDesktop() {
                     <motion.h1 variants={title} >
                         <Typography id="description_title-motion-desktop">VIDEO</Typography>
                     </motion.h1>
-                    <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" />
+                    <YoutubeEmbed embedId={businessInfo.youtubeId} width="80%" isMobile={false}/>
                 </motion.div>
 
             </div>

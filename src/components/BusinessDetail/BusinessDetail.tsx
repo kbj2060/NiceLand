@@ -3,7 +3,6 @@ import BusinessDetailDesktop from './BusinessDetailDesktop';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import BusinessDetailMobile from './BusinessDetailMobile';
 import { DSTGSH_DEVICE_WIDTH } from '../../enums';
-import { useEffect } from 'react';
 
 export default function BusinessDetail() {
     const width = useWindowDimensions();

@@ -4,6 +4,10 @@
     justify-content: space-between;
 }
 
+.MuiButton-root {
+    font-family: 'Noto Serif KR', sans-serif !important;
+}
+
 .description-div {
     display: flex;
     flex-direction: column;
@@ -26,14 +30,14 @@
     font-family: 'Hahmlet', serif !important;
     letter-spacing: 2vw !important;
     color: #464646;
-    font-size: 5vw !important;
+    font-size: 3vw !important;
     font-weight: bold !important;
-    margin: 3vh auto;
+    margin: 3vh 5vw;
 }
 
 .description {
     font-family: 'Noto Serif KR', sans-serif;
-    font-size: 2vw !important;
+    font-size: 1.5vw !important;
 }
 /* 
 .address_date-div {

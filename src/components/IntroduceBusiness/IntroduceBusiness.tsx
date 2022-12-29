@@ -12,6 +12,7 @@ import {saveBusinessInfo} from "../../redux/modules/ControlBusinessInfo"
 import { description, image, title } from "../BusinessDetail/BusinessDetailMotion";
 import { motion } from "framer-motion";
 import { PAGEPATH } from "../../enums";
+import Transition from "../Transition/Transition";
 
 // install Swiper modules
 SwiperCore.use([Scrollbar, Pagination]);
@@ -41,7 +42,7 @@ function IntroduceBusinessCard(props: BusinessInfo) {
                 </div>
                 <motion.div variants={description} >
                     <Link to={PAGEPATH.DETAIL_BUSINESS} className="more-button">
-                        <Button variant="outlined" onClick={handleOnClick}  >More</Button>
+                        <Button variant="outlined" onClick={handleOnClick}  >더 보기</Button>
                     </Link>
                 </motion.div>
             </div>
@@ -65,6 +66,7 @@ export default function IntroduceBusiness() {
 
     return (
         <div className="introduce_business_root">
+            <Transition />
             <div className="title-div">
                 <Typography className="title">WORKS</Typography>
             </div>

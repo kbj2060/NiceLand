@@ -34,5 +34,41 @@
         "date" : "2021.08.18",
         "represent_picture" : "/Gaea/Gaea_represent.png",
         "youtubeId" : "9GVle2bkEUg"
+    },
+    "20211102-28-01" : {
+        "project_name": "Mountain",
+        "category" : "FACTORY",
+        "address" :  "도척면 진우리 782-2",
+        "lands" : [{
+            "address" :"진우리782-2",
+            "owner" : "나이스랜드",
+            "buildingArea" : "699.2 m2",
+            "floorArea" : "798.56 m2",
+            "siteArea": "4392 m2",
+            "buildingToLandRatio": "16.31 %",
+            "floorAreaRatio": "18.63 %",
+            "size" : "4392 m2"
+        }],
+        "date" : "2021.11.02",
+        "represent_picture" : "/Mountain/Mountain_represent.png", 
+        "youtubeId" : ""
+    },
+    "20211221-28-02" : {
+        "project_name": "Garden",
+        "category" : "FACTORY",
+        "address" :  "초월읍 대쌍령리 253-31",
+        "lands" : [{
+            "address" :"대쌍령리253-31",
+            "owner" : "나이스랜드",
+            "buildingArea" : "497 m2",
+            "floorArea" : "497 m2",
+            "siteArea": "1604 m2",
+            "buildingToLandRatio": "30.99 %",
+            "floorAreaRatio": "30.99 %",
+            "size" : "1604 m2"
+        }],
+        "date" : "2021.12.21",
+        "represent_picture" : "/Garden/Garden_represent.png", 
+        "youtubeId" : ""
     }
 }

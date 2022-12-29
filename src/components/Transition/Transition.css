@@ -15,6 +15,7 @@
 }
 
 .transition-text {
+    font-family: 'Hahmlet', serif !important;
     font-size: large;
     font-weight: bold;
     color: white;
